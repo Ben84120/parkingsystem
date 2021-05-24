@@ -21,8 +21,8 @@ public class DataBaseTestConfig extends DataBaseConfig {
             try {
                 con.close();
                 logger.info("Closing DB connection");
-            } catch (SQLException e) {
-                logger.error("Error while closing connection",e);
+			} catch (SQLException e) {
+				logger.error("Error while closing connection",e);
             }
         }
     }
