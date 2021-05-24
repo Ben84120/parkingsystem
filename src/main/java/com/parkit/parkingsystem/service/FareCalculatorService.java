@@ -15,7 +15,7 @@ public class FareCalculatorService {
 
 		float duration = (float) (outHour - inHour) / 3600000;
 
-		if (duration < 0.5) { // calculation of the free ticket below 30 minutes of parking
+		if (duration < 0.5) { // calculation of free ticket below 30 minutes of parking
 			ticket.setPrice(duration * Fare.CAR_BIKE_FREE);
 			System.out.println("Votre ticket est gratuit");
 			return;
